@@ -1,0 +1,76 @@
+input {
+	border: 0;
+	text-align: right
+}
+
+input:focus {
+	outline: none;
+}
+
+input#consoleResult {
+	font-size: 9px;
+	width: 100%;
+	background: #a2af77;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	padding: 5px;
+	color: #222;
+}
+
+input#total {
+	background: #a2af77;
+	margin-bottom: 10px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	color: #fff;
+	font-size: 14px;
+	padding: 5px;
+}
+
+button {
+	padding: 5px 10px;
+	width: 100%;
+	background: #575759;
+	color: #fff;
+	border: 2px solid #373737;
+	outline: none;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+button:hover {
+	background: #333;
+}
+
+table {
+	padding: 15px;
+	border-radius: 6px;
+}
+
+table td {
+	position: relative;
+}
+
+.calculator_back {
+	background-color: #f4757e;
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+tr.operator td button {
+	background-color: #121011;
+}
+
+button#solve {
+	height: 100%;
+	position: absolute;
+	top: 0;
+	background: #f9522f;
+}
+
+tr.operator td button:hover {
+	background-color: #222;
+}

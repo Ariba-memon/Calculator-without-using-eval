@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Calculator</title>
+   <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+ <body class="calculator_back">
+      <table  align="center"  bgcolor="#373737" border="0" cellspacing="0" cellpadding="0">
+         <thead>
+            <tr>
+               <td colspan="4"><input type="text" value="" id="consoleResult" readonly></td>
+            </tr>
+            <tr>
+               <td colspan="4"><input type="text" value="0" id="total" readonly></td>
+            </tr>
+         </thead>
+         <tbody>
+            <tr class="operator">
+               <td><button onclick="clr('C')"/>C</td>
+               <td><button onclick="calculator('%')"/>√</td>
+               <td><button onclick="calculator('/')"/>/</td>
+               <td><button onclick="calculator('*')"/>x</td>
+            </tr>
+            <tr>
+               <td><button onclick="calculator('7')">7</td>
+               <td><button onclick="calculator('8')">8</td>
+               <td><button onclick="calculator('9')">9</td>
+               <td><button onclick="calculator('+')">+</td>
+            </tr>
+            <tr>
+               <td><button onclick="calculator('4')">4</td>
+               <td><button onclick="calculator('5')">5</td>
+               <td><button onclick="calculator('6')">6</td>
+               <td><button onclick="calculator('-')">-</td>
+            </tr>
+            <tr>
+               <td><button onclick="calculator('1')">1</td>
+               <td><button onclick="calculator('2')">2</td>
+               <td><button onclick="calculator('3')">3</td>
+               <td rowspan="2"><button id="solve" onclick="solve()">=</td>
+            </tr>
+            <tr>
+               <td colspan="2"><button onclick="calculator('0')">0</td>
+               <td><button onclick="calculator('.')">.</td>
+            </tr>
+         </tbody>
+      </table>
+      <script src="app.js"></script>
+</body>
+</html>
